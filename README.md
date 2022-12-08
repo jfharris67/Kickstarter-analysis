@@ -1,14 +1,18 @@
 # Kickstarting with Excel
 
 ## Overview of Project
-Perform an analysis of theatre crowdfunding projects to identify success rates and trends.
+An analysis of theatre and play campaigns in relation to their launch dates and funding goals.
 
 ### Purpose
-Assist Louise in identifying success/failure rates based on fundraising goals and launch time of year.
+
+Louise is close to achieving her goal of $10,000 for her play "Fever." She is interested in knowing how other campaigns went based on their funding goals and launch dates.
 
 ## Analysis and Challenges
 
 ### Analysis of Outcomes Based on Launch Date
+
+Using a previous analysis, I performed the additional analysis below, paying particular attention to theatre launch dates.
+
 I created a new column in the Kickstarter worksheet labeled "Years." For this column, I used the YEAR() function in this column to extract the year from the "Date Created Conversion" column. I created a pivot table filtering the columns by "successful," "failed," and "canceled." I filtered the parent category by "Theatre." I then created a line pivot chart (below).
 ![Theater_Outcomes_vs_Launch](https://user-images.githubusercontent.com/114355199/204607091-6c2545c1-43ed-401f-9c3e-3b260eda5a4c.png)
 
@@ -31,9 +35,9 @@ The biggest challenge I encountered was identifying the subcategory "Plays" base
 	- The highest success rate is campaigning with a goal of less than $1000, achieving 76%. Kickstarter, with a goal between $1000 and $5000, had a slightly less success rate of 73%. Considering the goal for this project is $10,000, the data indicate a success rate of 54%.
 
 - What are some limitations of this dataset?
-	- It would have been nice to see revenue and costs generated. It is all well and good to identify the best months to launch and the success rate of goals; how much profit did these shows generate?
+	- It would have been nice to see revenue and costs generated. I am sure Louise has taken this into account when figuring out her goal, but revenue and cost could also provide her some insight if the overall success of the campaign would align with other plays.
+	- It would have been nice to have visibility into what each backer pledged. Looking at the mean, median and mode could have helped us identify outliers. For example, some campaigns could have big donations from a few individuals, which may not be the case with other campaigns. The good news, Louise is close to reaching her goal anyway.
 
 - What are some other possible tables and or graphs that we could create?
 	- Further defining the subcategory "plays" based on the launch date. Considering just the parent category may hide a better analysis that would be more appropriate for "plays."
 	- Further analysis by year and country could give us more insights.
-	- We could look at the average, median, and mode donations per person.
